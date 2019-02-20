@@ -1,0 +1,156 @@
+
+body{
+  position: relative;
+}
+  /*Social*/
+  .social {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+   
+  }
+.social-color{
+    color: black;
+}
+  /*End of social*/
+
+/*Gallery*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+ 
+.eachimage{
+  justify-content: center;
+}
+.column1{
+  padding-left:4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  #sidebar{
+    display:none;
+  }
+
+  .sh{
+    width:852px;
+    height:474px;
+    margin-right:10px;
+    margin-top:45px;
+  }
+  .sv{
+    width:249px;
+    height:373px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  #sidebar{
+    display:none;
+  }
+  .sh{
+    width:367px;
+    height:216px;
+    margin-right:10px;
+    margin-top:45px;
+  }
+  .container2{
+    left:0px;
+    
+  }
+  .sv{
+    width:249px;
+    height:373px;
+  }
+}
+.navbar
+{
+    border-bottom:1px solid rgb(66, 65, 65);
+}
+.container{
+position: absolute;
+left: 0;
+width: 250px;
+height: 100%;
+}
+.container2{
+position: absolute;
+left: 250px;
+width: 80%;
+height: 100%;
+margin-left:10px;
+padding: 4px;
+}
+
+.nextprev{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.content{
+  display:flex;
+  justify-content: center;
+}
+h1.first{
+  padding-top:150px;
+  padding-left: 25px;
+  font-family:Courier New, monospace;
+  padding-bottom: 4px;
+}
+h2.second{
+  padding-left: 25px;
+  font-family:Courier New, monospace;
+}
+h4{
+  font-family:Courier New, monospace;
+  color: black;
+}
+.img-button:hover{
+  cursor: pointer;
+  
+}
+.img-button{
+  border:none;
+}
+.cat-button{
+  background-color: transparent;
+  border: none;
+}
+.cat-button:hover h4::before{
+  content: ">";
+  }
+
+
+/*End of gallery/
+
+

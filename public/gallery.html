@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <title>Gallery</title>
+  
+</head>
+<body>
+  
+     <!-- header -->
+    <header>
+        <div class="container" id="sidebar">
+              <!--Categories-->
+                  <ul class="list-unstyled ">
+                      <li><button class="  cat-button mt-2 mb-4 pl-4 " type="button" id="home" ><h1 class="first text-uppercase text-weight-bold">Hemanth</h1></button></li>
+                      <li><button class=" cat-button mt-2 mb-4 pl-4 " type="button" id="street" onclick="streetOnclick()"><h4 class="text-uppercase" id="stext">Street</h4></button></li>
+                      <li><button class=" cat-button mb-4 ml-4" type="button" id="urban" onclick="urbanOnclick()" ><h4 class="text-uppercase" id="utext">Urban</h4></button></li>
+                      <li><button class=" cat-button mb-4 ml-4 category-container" id="travel" onclick="travelOnclick()" type="button"><h4 class="text-uppercase"id="ttext" >Travel</h4></button></li>
+                      <li><button class=" cat-button  mb-4 ml-4 category-container" id="nature"   type="button"><h4 class="text-uppercase" id="ntext">Nature</h4></button></li>
+                      <li><button class="cat-button  mb-4 ml-4 category-container" id="portrait"onclick="portOnclick()" type="button"><h4 class="text-uppercase" id="ptext" >Portraiture</h4></button></li>
+                    </ul>  
+              <!--End ofCategories-->
+          </div>
+          
+        <div class="container2" id="photos">
+          <!--street-->
+            <section id="streetA">
+                <div class="row"> 
+                    <div class="column column1">
+                      <img src="images/s1.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(1)">
+                      <img src="images/s12.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(2)">
+                      <img src="images/s2.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(3)">
+                      <img src="images/s3.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(4)">
+                      
+                      
+                      
+                    </div>
+                    <div class="column">
+                      <img src="images/s5.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(5)">
+                      <img src="images/s6.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(6)">
+                      <img src="images/s7.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(7)">
+                      <img src="images/s8.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(8)">
+                      <img src="images/s21.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(9)">
+                     
+                     
+                    </div>  
+                    <div class="column">
+                      <img src="images/s9.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(10)">
+                      <img src="images/s10.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(11)">
+                      <img src="images/s20.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(12)">
+                      <img src="images/s18.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(13)">
+                      
+                    </div>
+                    <div class="column">
+                      <img src="images/s13.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(14)">
+                      <img src="images/s17.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(15)">
+                      <img src="images/s11.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(16)">
+                      <img src="images/s16.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(17)">
+                      <img src="images/s19.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(18)">
+                      <img src="images/s4.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModal();currentDiv(19)">
+                      </div>
+                  </div>
+              </section>
+              <!--end of street-->
+
+              <!--urban-->
+              <section id="urbanA" style="display:none;">
+                <div class="row"> 
+                    <div class="column column1">
+                      <img src="images/u1.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(1)">
+                      <img src="images/u2.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(2)">
+                      <img src="images/u3.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(3)">
+                      <img src="images/u4.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(4)">
+                      <img src="images/u5.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(5)">
+
+                    </div>
+                    <div class="column">
+                      <img src="images/u6.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(6)">
+                      <img src="images/u7.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(7)">
+                      <img src="images/u8.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(8)">
+                      <img src="images/u9.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(9)">
+                      <img src="images/u10.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(10)">
+                    </div>  
+                    <div class="column">
+                        <img src="images/u11.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalu();currenturban(11)">
+                      <img src="images/u12.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(12)">
+                      <img src="images/u13.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(13)">
+                      <img src="images/u14.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(14)">
+                      <img src="images/u15.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(15)">
+                    </div>
+                    <div class="column">
+                        <img src="images/u16.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalu();currenturban(16)">
+                      <img src="images/u17.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(17)">
+                      <img src="images/u18.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(18)">
+                      <img src="images/u19.jpg" style="width:100%;cursor:pointer"
+                      onclick="openModalu();currenturban(19)">
+                      </div>
+                  </div>
+              </section>
+              <!--end of urban-->
+
+              <!--portrait-->
+              <section id="portraitA" style="display:none;">
+                  <div class="row"> 
+                      <div class="column column1">
+                        <img src="images/p1.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(1)">
+                        <img src="images/p26.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(2)">
+                        <img src="images/p15.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(3)">
+                        <img src="images/p17.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(4)">
+                        <img src="images/p21.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(5)">
+                        <img src="images/p25.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(6)">
+                        <img src="images/p27.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(7)">
+                      </div>
+                      <div class="column">
+                          <img src="images/p16.jpg" style="width:100%;cursor:pointer"
+                          onclick="openModalp();currentport(8)">
+                        <img src="images/p6.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(9)">
+                        <img src="images/p24.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(10)">
+                        <img src="images/p18.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(11)">
+                        <img src="images/p22.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(12)">
+                        <img src="images/p12.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(13)">
+                        <img src="images/p2.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(14)">
+                      </div>  
+                      <div class="column">
+                        <img src="images/p19.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(15)">
+                        <img src="images/p3.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(16)">
+                        <img src="images/p7.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(17)">
+                        <img src="images/p10.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(18)">
+                        <img src="images/p14.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(19)">
+                        <img src="images/p23.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(20)">
+                       
+                      </div>
+                      <div class="column">
+                        <img src="images/p4.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(21)">
+                        <img src="images/p9.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(22)">
+                        <img src="images/p8.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(23)">
+                        <img src="images/p11.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(24)">
+                        <img src="images/p5.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(25)">
+                        <img src="images/p20.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(26)">
+                        <img src="images/p13.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalp();currentport(27)">
+                        </div>
+                    </div>
+                </section> 
+                <!--end of portrait-->
+
+                <!--travel-->
+              <section id="travelA" style="display:none;">
+                  <div class="row"> 
+                      <div class="column column1">
+                        <img src="images/t2.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(1)">
+                        <img src="images/t24.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(2)">
+                        <img src="images/t4.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(3)">
+                        <img src="images/t5.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(4)">
+                        <img src="images/t6.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(5)">
+                        
+                      </div>
+                      <div class="column">
+                          <img src="images/t21.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(6)">
+                          <img src="images/t8.jpg" style="width:100%;cursor:pointer"
+                          onclick="openModalt();currenttravel(7)">
+                        <img src="images/t9.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(8)">
+                        <img src="images/t10.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(9)">
+                        <img src="images/t11.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(10)">
+                        <img src="images/t12.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(11)">
+                        
+                      </div>  
+                      <div class="column">
+                          <img src="images/t13.jpg" style="width:100%;cursor:pointer"
+                          onclick="openModalt();currenttravel(12)">
+                          <img src="images/t14.jpg" style="width:100%;cursor:pointer"
+                          onclick="openModalt();currenttravel(13)">
+                        <img src="images/t15.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(14)">
+                        <img src="images/t16.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(15)">
+                        <img src="images/t17.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(16)">
+                        <img src="images/t18.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(17)">
+                      </div>
+                      <div class="column">
+                          <img src="images/t19.jpg" style="width:100%;cursor:pointer"
+                          onclick="openModalt();currenttravel(18)">
+                          <img src="images/t20.jpg" style="width:100%;cursor:pointer"
+                          onclick="openModalt();currenttravel(19)">
+                          <img src="images/t7.jpg" style="width:100%;cursor:pointer"
+                          onclick="openModalt();currenttravel(20)">
+                        <img src="images/t22.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(21)">
+                        <img src="images/t23.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(22)">
+                        <img src="images/t3.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(23)">
+                        <img src="images/t1.jpg" style="width:100%;cursor:pointer"
+                        onclick="openModalt();currenttravel(24)">
+                        </div>
+                    </div>
+                </section> 
+                <!-- end of travel-->
+
+                <!-- Street Modal-->
+                <div id="modal" class="w3-modal w3-black" style="display:none;">
+                  <span class="text-black w3-xxlarge w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">close</span>
+                  <div class="nextprev">
+                    <span class=" btn" onclick="plusDivs(-1)">Previous</span>
+                  <span class=" btn" onclick="plusDivs(1)">Next</span>
+                  </div>
+                  <div class="w3-modal-content">
+                   <div class="content" style="max-width:1200px ">
+                    <img class="slides sv" src="images/s1.jpg" width=497px height=746px>
+                    <img class="slides sh" src="images/s12.jpg"width=1136px height=632px>
+                    <img class="slides sv" src="images/s2.jpg" width=497px height=746px>
+                    <img class="slides sv" src="images/s3.jpg" width=497px height=746px>
+                    <img class="slides sh" src="images/s5.jpg" width=1136px height=632px>
+                    <img class="slides sv" src="images/s6.jpg" width=497px height=746px>
+                    <img class="slides sh" src="images/s7.jpg" width=1136px height=632px>
+                    <img class="slides sh" src="images/s8.jpg" width=1136px height=632px>
+                    <img class="slides sh" src="images/s21.jpg" width=1136px height=632px>
+                    <img class="slides sv" src="images/s9.jpg" width=497px height=746px>
+                    <img class="slides sh" src="images/s10.jpg" width=1136px height=632px>
+                    <img class="slides sh" src="images/s20.jpg" width=1136px height=632px>
+                    <img class="slides sv" src="images/s18.jpg" width=497px height=746px>
+                    <img class="slides sh" src="images/s13.jpg" width=1136px height=632px>
+                    <img class="slides sh" src="images/s17.jpg"width=1136px height=632px>
+                    <img class="slides sh" src="images/s11.jpg" width=1136px height=632px>
+                    <img class="slides sh" src="images/s16.jpg" width=1136px height=632px>
+                    <img class="slides sh" src="images/s19.jpg" width=1136px height=632px>
+                    
+                   </div> 
+                  </div> 
+                 </div> 
+                <!-- End of street modal -->
+                <!-- Urban modal-->
+                <div id="urbanmodal" class="w3-modal w3-black" style="display:none;">
+                  <span class="text-black w3-xxlarge w3-container w3-display-topright" onclick="closeModalu()" style="cursor:pointer">close</span>
+                  <div class="nextprev">
+                    <span class=" btn" onclick="nexturban(-1)">Previous</span>
+                  <span class=" btn" onclick="nexturban(1)">Next</span>
+                  </div>
+                  <div class="w3-modal-content">
+                   <div class="content" style="max-width:1200px ">
+                    <img class="urbanslides" src="images/u1.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u2.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u3.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u4.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u5.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u6.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u7.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u8.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u9.jpg" width=1136px height=632px>
+                    <img class="urbanslides" src="images/u10.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u12.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u13.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u14.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u15.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u16.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u17.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u18.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/u19.jpg" width=497px height=746px>
+                    <img class="urbanslides" src="images/s4.jpg" width=497px height=746px>
+                   </div> 
+                  </div> 
+                 </div> 
+                <!--End of street modal-->
+
+
+                <!-- portrait modal-->
+                <div id="portmodal" class="w3-modal w3-black" style="display:none;">
+                  <span class="text-black w3-xxlarge w3-container w3-display-topright" onclick="closeModalp()" style="cursor:pointer">close</span>
+                  <div class="nextprev">
+                    <span class=" btn" onclick="nextport(-1)">Previous</span>
+                  <span class=" btn" onclick="nextport(1)">Next</span>
+                  </div>
+                  <div class="w3-modal-content">
+                   <div class="content" style="max-width:1200px ">
+                    <img class="portslides" src="images/p1.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p26.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p15.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p17.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p21.jpg" width=1136px height=632px>
+                    <img class="portslides" src="images/p25.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p27.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p16.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p6.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p24.jpg" width=967px height=646px>
+                    <img class="portslides" src="images/p18.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p22.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p12.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p2.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p19.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p3.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p7.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p10.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p14.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p23.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p4.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p9.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p8.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p19.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p5.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p20.jpg" width=497px height=746px>
+                    <img class="portslides" src="images/p13.jpg" width=497px height=746px>
+                   </div> 
+                  </div> 
+                 </div> 
+                <!--End of portrait modal-->
+
+                   <!-- travel modal-->
+                   <div id="travelmodal" class="w3-modal w3-black" style="display:none;">
+                      <span class="text-black w3-xxlarge w3-container w3-display-topright" onclick="closeModalt()" style="cursor:pointer">close</span>
+                      <div class="nextprev">
+                        <span class=" btn" onclick="nexttravel(-1)">Previous</span>
+                      <span class=" btn" onclick="nexttravel(1)">Next</span>
+                      </div>
+                      <div class="w3-modal-content">
+                       <div class="content" style="max-width:1200px ">
+                        <img class="travelslides" src="images/t2.jpg" width=497px height=746px>
+                        <img class="travelslides" src="images/t24.jpg" width=984px height=519px>
+                        <img class="travelslides" src="images/t4.jpg"  width=1002px height=669px>
+                        <img class="travelslides" src="images/t5.jpg" width=1002px height=669px>
+                        <img class="travelslides" src="images/t6.jpg" width=1002px height=669px>
+                        <img class="travelslides" src="images/t21.jpg" width=666px height=1000px>
+                        <img class="travelslides" src="images/t8.jpg"  width=1002px height=669px>
+                        <img class="travelslides" src="images/t9.jpg"  width=1002px height=669px>
+                        <img class="travelslides" src="images/t10.jpg" width=1002px height=669px>
+                        <img class="travelslides" src="images/t11.jpg" width=1002px height=669px>
+                        <img class="travelslides" src="images/t12.jpg"  width=1002px height=669px>
+                        <img class="travelslides" src="images/t13.jpg"  width=1000px height=666px>
+                        <img class="travelslides" src="images/t14.jpg" width=1000px height=666px>
+                        <img class="travelslides" src="images/t15.jpg" width=998px height=664px>
+                        <img class="travelslides" src="images/t16.jpg" width=998px height=664px>
+                        <img class="travelslides" src="images/t17.jpg" width=416px height=741px>
+                        <img class="travelslides" src="images/t18.jpg" width=993px height=554px>
+                        <img class="travelslides" src="images/t19.jpg" width=1000px height=563px>
+                        <img class="travelslides" src="images/t20.jpg" width=996px height=559px>
+                        <img class="travelslides" src="images/t7.jpg" width=1000px height=666px>
+                        <img class="travelslides" src="images/t22.jpg" width=1000px height=666px>
+                        <img class="travelslides" src="images/t23.jpg" width=1000px height=666px>
+                        <img class="travelslides" src="images/t3.jpg" width=1002px height=669px>
+                        <img class="travelslides" src="images/t1.jpg" width=521px height=793px>
+                       </div> 
+                      </div> 
+                     </div> 
+                    <!--End of travel modal-->
+         </div>
+         
+    
+        </header>
+  <!--Footer-->
+  <footer>
+      <!-- <div class="row">
+          <div class="col text-right pt-3">
+            <p class="pl-4">&copy; 2019 Hemanth Nirujogi, Website by Harisha Swaminathan</p>
+          </div>
+        </div>  -->
+        <div class="justify-content-left social">
+          <a href="https://www.instagram.com/hemanth.nef/?hl=en" > <i class="fab fa-instagram social-color fa-2x fa-fw" ></i></a>
+           <a href="https://www.facebook.com/hemanthnirujogi"> <i class="fab fa-facebook-square social-color fa-2x fa-fw"></i></a>
+          <a href="http://twitter.com/saihemanth13"> <i class="fab fa-twitter-square social-color fa-2x fa-fw"></i></a>
+        </div>
+  </footer>
+  <!--EndFooter-->
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

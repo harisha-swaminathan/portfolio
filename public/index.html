@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Photo Portfolio</title>
+</head>
+<body>
+  
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    
+    <nav class="navbar navbar-expand-lg nav-menu">
+        <a href="#" class="navbar-brand text-light text-uppercase"><span class=" font-weight-bold">Hemanth</span></a>
+      <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#optionnavbar">
+        <div class="bg-light line1"></div>
+        <div class="bg-light line2"></div>
+        <div class="bg-light line3"></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="optionnavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link m-2 menu-item nav-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link m-2 menu-item">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link m-2 menu-item">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link m-2 menu-item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    
+    <!-- banner -->
+    <div class="text-light text-md-left text-center banner" id="home">
+    <h2 class="display-3 about-title text-uppercase">Hey, there!</h2>
+          <p class="lead banner-subtitle"> Welcome to my portfolio. blah blah Hemanth Nirujogi</p>
+    <!-- end of banner -->
+  </header>
+  <!-- end of header -->
+
+  <!-- about -->
+  <section class="p-3 mb-9">
+      <div class="text-white text-center" id="about">
+          <h2 class="display-4 font-weight-bold mb-4 about text-uppercase">About me</h2>
+      </div>
+       <!-- end of about title -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 about-container p-5" >
+          <div>
+            <p class=" font-weight-bold subtitle">Jayme Burrows is a commercial and editorial photographer based out of Los Angeles, California.
+             She is a foodie, a traveler, and a voracious devourer of art. She loves lush, exuberant images that have sexy light.</p>
+            <p class=" font-weight-bold subtitle">Jayme studied first at the University of California at Santa Barbara earning her B.A. in Art History and History. 
+              She then went on to study Visual Journalism at the Brooks Institute and eventually earned her MFA in Photography from Brooks as well.
+              It is her training in fine art and journalism that still affects her commercial work today.</p>
+              <p class=" font-weight-bold subtitle">In addition to her commercial and editorial work Jayme teaches Digital Photography at Ventura College. 
+                She is also the founder of the Los Angeles Women's Photography Alliance, a group that supports female professional photographers in their endeavors to improve their work and land bigger clients.</p>
+                <p class=" font-weight-bold subtitle">Jayme is a proud member of the Stocksy United Co-Op. 
+              Her images are available for licensing at www.stocksy.com/JaymeBurrows</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
+  <!-- end of about -->
+  <!--contact-->
+  <section  id="contact">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 pb-4">
+          <h2 class="display-4 b-5 text-light text-center text-uppercase">Contact info</h2> 
+        <form  method="post" action="index.php">
+          <div class="form-group py-3">
+            <input name="name" type="text" class="form-control my-2 p-2" placeholder="Name"> 
+            <label for="name" class="label text-light">Name</label>
+          </div>
+          <div class="form-group py-3">
+              <input name="email" type="email" class="form-control my-2 p-2" placeholder="Email"> 
+              <label for="email" class="label text-light">Email Address</label>
+            </div>
+            <div class="form-group py-3">
+                <textarea name="message"class="form-control my-2 p-2" rows="9"  placeholder="Message"></textarea> 
+                <label for="message" class="label text-light">Message</label>
+              </div>
+              <button id="send" type="submit" class="btn btn-block p-2 font-weight-bold text-uppercase send">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--End of contact-->
+
+  <!--Footer-->
+  <footer>
+      <div class="row">
+          <div class="col text-center text-light pt-3">
+            <p>&copy; 2019 Hemanth Nirujogi, Website by Harisha Swaminathan</p>
+          </div>
+        </div>
+        <div class="justify-content-right social">
+          <a href="https://www.instagram.com/hemanth.nef/?hl=en" > <i class="fab fa-instagram text-light fa-2x fa-fw" ></i></a>
+           <a href="https://www.facebook.com/hemanthnirujogi"> <i class="fab fa-facebook-square text-light fa-2x fa-fw"></i></a>
+          <a href="http://twitter.com/saihemanth13"> <i class="fab fa-twitter-square text-light fa-2x fa-fw"></i></a>
+        </div>
+  </footer>
+  <!--EndFooter-->
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

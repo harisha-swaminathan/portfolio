@@ -1,0 +1,154 @@
+/*Navbar*/
+.nav-menu{
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)); 
+  padding:30px;
+  transition: all .7s;
+}
+.menu-item{
+    font-size:13px;
+    letter-spacing:1px;
+    color:rgba(253, 251, 251, 0.933)
+}
+h2{
+  font-family:Courier New, monospace;
+}
+.line1, .line2, .line3{
+    width:23px;
+    height:3px;
+    margin:5px;
+}
+.scroll-navbar{
+   padding:5px 30px;
+   background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7));
+}
+.dropdowncolor{
+color: black;
+}
+/* End of Navbar*/
+
+/* Hey there page*/
+.banner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:80%;
+}
+.banner-title{
+  animation-name:anim;
+  animation-duration: 2s;
+}
+.banner-button{
+  background:none;
+  border: none;
+  height:3rem;
+  width:300px;
+  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)); 
+  animation-name:anim;
+  animation-duration: 2s;
+  animation-delay:1.5s;
+  animation-fill-mode: backwards;
+}
+.banner-button:hover span::before{
+content: " < ";
+}
+.banner-button:hover{
+transform: translateX(6px);
+}
+.navbar-nav .dropdown-menu {
+  background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5));   
+}
+.banner-button:focus{
+box-shadow:none;
+}
+.banner-subtitle{
+animation-name:anim;
+animation-duration: 2s;
+animation-delay:.7s;
+animation-fill-mode: backwards;
+}
+@keyframes anim {
+0%{
+    transform:translateX(-100px);
+    opacity: 0;
+}
+100%{
+    transform:translateX(0);
+    opacity: 1;
+}
+}
+
+/* End of  Hey there page*/
+
+/*Body bg changing animation*/
+.changeColor {
+  background: url(images/in2.jpeg)fixed no-repeat center center /cover;
+  
+}
+body.hovered{
+  background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url(images/bg.jpeg)fixed no-repeat center center /cover;
+}
+body.hovered2{
+  background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url(images/animal.jpg)fixed no-repeat center center /cover;
+}
+
+/*Body bg changing animation*/
+
+/*About*/
+.about-title{
+  animation-name:anim;
+  animation-duration: 2s;
+}
+.about-subtitle{
+  animation-name:anim;
+  animation-duration: 2s;
+}
+.about-container{
+background: rgba(243, 234, 234, 0.9);
+height: 483;
+width: 793;
+}
+.subtitle{
+  text-align: justify;
+  color:black;
+}
+.dp{
+  display:block;
+}
+
+/* End of About*/
+
+/*Contact*/
+
+.social {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.messagebox{
+  height:40vh;
+}
+
+/*End of Contact*/
+
+/*General stuff*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+   height:100vh;
+}  
+body{
+  background:url(images/in.jpeg) fixed no-repeat center center /cover;
+  transition: all .7s;
+  /* background-repeat:no-repeat;
+    background-size: cover; */
+}
+
+/*End of General stuff*/
+
+  
